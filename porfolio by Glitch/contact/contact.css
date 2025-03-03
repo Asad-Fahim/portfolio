@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+  background: #222;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+  border: 2px solid #00abf0;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #00abf0;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+
+  top: -5px;
+  left: -5px;
+  border-radius: 8px;
+}
+
+.text {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.text h3 {
+  font-size: 1.2rem;
+  color: #00abf0;
+}
+
+.text p {
+  font-size: 0.9rem;
+  color: #fffbfb;
+}
+
+.txt {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.sci {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sci li {
+  margin: 0 10px;
+}
+
+.sci i {
+  color: #00abf0;
+  font-size: 1.5rem;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s linear;
+  z-index: 9999;
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: none; 
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: #00abf0;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease, opacity 0.2s ease;
+}
+
+.cursor-circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+a, button {
+    cursor: none;
+}
+
+a:hover ~ .cursor-circle,
+button:hover ~ .cursor-circle {
+    transform: translate(-50%, -50%) scale(1.5);
+    border-color: #00abf0;
+}

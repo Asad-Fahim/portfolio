@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="/custom cursor/cursor.css">
+</head>
+<body>
+
+    <div class="feedback-container">
+        <h1>We Value Your Feedback</h1>
+        <p>Do you like this website?</p>
+
+        <div class="buttons">
+            <button class="like" onclick="selectFeedback('like')">👍 Like</button>
+            <button class="dislike" onclick="selectFeedback('dislike')">👎 Dislike</button>
+        </div>
+
+        <textarea id="review" placeholder="What can we improve?"></textarea>
+        <button class="submit" onclick="submitReview()">Submit</button>
+    </div>
+    
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+    
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <script src="review.js"></script>
+    <script src="/custom cursor/cursor.js"></script>
+</body>
+</html>
