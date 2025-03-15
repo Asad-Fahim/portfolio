@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="our-service.css" />
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Live Jeans.</a>
+        <nav class="navbar">
+            <a href="about me.html" class="nav-link">About</a>
+            <a href="/main.html" class="nav-link">Portfolio</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="review.html" class="nav-btn">Review</a>
+        </nav>
+        <div class="menu-toggle">☰</div>
+    </header>
+
+    <div class="container">
+        <div class="service-wrapper">
+            <h1>Our Service <span></span></h1>
+            <div class="cards">
+                <div class="card-container" onclick="openPopup('popup1')">
+                    <div class="card">
+                        <i class="fas fa-warehouse"></i>
+                        <h2>We Source the Finest Denim Fabrics!</h2>
+                        <img src="raw.webp" alt="Stack of denim fabric">
+                        <p>Sourcing top-quality denim for ultimate comfort and style.</p>
+                    </div>
+                </div>
+                <div class="card-container" onclick="openPopup('popup2')">
+                    <div class="card">
+                        <i class="fas fa-scissors"></i>
+                        <h2>Precision in Every Cut We Cut!</h2>
+                        <img src="cutting.avif" alt="fabric cutting for jeans">
+                        <p>Expert cutting for flawless fits and finishes.</p>
+                    </div>
+                </div>
+                <div class="card-container" onclick="openPopup('popup3')">
+                    <div class="card">
+                        <i>🪡</i>
+                        <h2>Crafting Style, One Stitch at a Time!</h2>
+                        <img src="stitching.jpeg" alt="Sewing machine at work">
+                        <p>Precision stitching that turns fabric into art.</p>
+                    </div>
+                </div>
+                <div class="card-container" onclick="openPopup('popup4')">
+                    <div class="card">
+                        <i>✏️</i>
+                        <h2>Designing Dreams, Crafting Perfection!</h2>
+                        <img src="design.jpeg" alt="Designer sketching">
+                        <p>Creative designs that bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="card-container" onclick="openPopup('popup5')">
+                    <div class="card">
+                        <i>📦</i>
+                        <h2>Sealed with Care, Delivered with Trust!</h2>
+                        <img src="packing.webp" alt="Packaged goods">
+                        <p>Careful packaging for perfect delivery.</p>
+                    </div>
+                </div>
+                <div class="card-container" onclick="openPopup('popup6')">
+                    <div class="card">
+                        <i class="fas fa-box"></i>
+                        <h2>Bulk to Boutique. We Supply It All!</h2>
+                        <img src="bulk order.webp" alt="Wholesale goods">
+                        <p>Quality supply for all your needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup1')">×</span>
+                    <i class="fas fa-warehouse"></i>
+                    <h2>We Source the Finest Denim Fabrics!</h2>
+                    <img src="raw.webp" alt="Stack of denim fabric">
+                    <p>
+                        <ul>
+                            <li>Jeans so comfortable you’ll never want to take them off—we start with the best denim out there!</li>
+                            <li>We hunt down top-notch fabrics from suppliers who know their stuff, ensuring every thread screams quality.</li>
+                            <li>Style meets durability in every pair, because you deserve jeans that look great and last forever.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup2')">×</span>
+                    <i class="fas fa-scissors"></i>
+                    <h2>Precision in Every Cut We Cut!</h2>
+                    <img src="cutting.avif" alt="fabric cutting for jeans">
+                    <p>
+                        <ul>
+                            <li>We’re like artists with scissors—turning raw fabric into pure magic with every snip.</li>
+                            <li>Denim, cotton, you name it—we cut it just right for that perfect fit you’ll love showing off.</li>
+                            <li>No rough edges here, just smooth, flawless finishes that make your designs pop.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup3" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup3')">×</span>
+                    <i>🪡</i>
+                    <h2>Crafting Style, One Stitch at a Time!</h2>
+                    <img src="stitching.jpeg" alt="Sewing machine at work">
+                    <p>
+                        <ul>
+                            <li>Every stitch is a love letter to quality—our workshop is where passion meets precision.</li>
+                            <li>Jeans, jackets, or your wildest custom ideas—we sew them into reality with flair.</li>
+                            <li>It’s not just tailoring; it’s crafting wearable stories you’ll adore.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup4" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup4')">x</span>
+                    <i>✏️</i>
+                    <h2>Designing Dreams, Crafting Perfection!</h2>
+                    <img src="design.jpeg" alt="Designer sketching">
+                    <p>
+                        <ul>
+                            <li>We’re dream-weavers with a pencil—sketching bold, creative designs just for you.</li>
+                            <li>From funky patterns to timeless styles, we mix innovation with skill to bring your vision alive.</li>
+                            <li>Your ideas? We turn them into jaw-dropping reality with a sprinkle of our magic.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup5" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup5')">×</span>
+                    <i>📦</i>
+                    <h2>Sealed with Care, Delivered with Trust!</h2>
+                    <img src="packing.webp" alt="Packaged goods">
+                    <p>
+                        <ul>
+                            <li>Your package isn’t just boxed—it’s wrapped with love and care, like a gift to yourself.</li>
+                            <li>We fold, tuck, and secure every item so it arrives looking as good as it did leaving us.</li>
+                            <li>It’s not just delivery; it’s a promise that what you get will wow you every time.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup6" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup6')">×</span>
+                    <i class="fas fa-box"></i>
+                    <h2>Bulk to Boutique. We Supply It All!</h2>
+                    <img src="bulk order.webp" alt="Wholesale goods">
+                    <p>
+                        <ul>
+                            <li>Big orders or small treasures—we’ve got the goods to make your world stylish.</li>
+                            <li>Wholesale for your business or retail for your wardrobe, all crafted with heart.</li>
+                            <li>Top quality at prices that’ll make you smile—because great style shouldn’t break the bank.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div> 
+     <div class="cursor-circle"></div>
+
+    <script src="our-service.js"></script>
+    <script src="cursor.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
